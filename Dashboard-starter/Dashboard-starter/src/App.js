@@ -5,12 +5,10 @@ import MainDash from './components/MainDash/MainDash'
 function App() {
   return (
     <div className="App">
+      
         <div className="AppGlass">
           <Sidebar/>
           <MainDash/>
-         
-          <div></div>
-          <div></div>
         </div>
     </div>
   );

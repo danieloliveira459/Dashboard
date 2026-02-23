@@ -9,11 +9,11 @@ export const SidebarData = [
   },
   {
     icon: LuWallet,
-    heading: "Wallet",
+    heading: "carteira",
   },
   {
     icon: RiCalculatorFill,
-    heading: "Calculator",
+    heading: "Simulador",
   }
 ];
 
