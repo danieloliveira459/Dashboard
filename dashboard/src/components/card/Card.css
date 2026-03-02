@@ -1,0 +1,13 @@
+.card {
+  background: var(--white);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  flex: 1;
+}
+
+.value {
+  font-size: 22px;
+  font-weight: bold;
+  margin-block-end: 10px;
+}

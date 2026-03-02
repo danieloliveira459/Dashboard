@@ -1,0 +1,15 @@
+import Sidebar from "../components/Sidebar/Sidebar";
+import "./Layout.css";
+
+const Layout = ({ children }) => {
+  return (
+    <div className="layout">
+      <Sidebar />
+      <main className="content">
+        {children}
+      </main>
+    </div>
+  );
+};
+
+export default Layout;
