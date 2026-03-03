@@ -1,0 +1,156 @@
+:root {
+  --bg-page: #f5f6fa;
+  --white: #ffffff;
+  --border: #e5e7eb;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --green: #84cc16;
+}
+
+
+.simulador-container {
+  padding: 48px 24px;
+  background: var(--bg-page);
+  min-block-size: 100vh;
+  font-family: "Inter", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-size: 28px;
+  font-weight: 600;
+  margin-block-end: 8px;
+  color: var(--text-dark);
+}
+
+.subtitulo {
+  color: var(--text-light);
+  margin-block-end: 40px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.produtos {
+  display: flex;
+  gap: 28px;
+  margin-block-end: 48px;
+  justify-content: center;
+  inline-size: 100%;
+  max-inline-size: 1200px;
+}
+
+.produto-card {
+  flex: 1;
+  max-inline-size: 260px;
+  block-size: 150px;
+
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.produto-card span {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-dark);
+}
+
+.produto-card:hover {
+  border-color: var(--green);
+  transform: translateY(-2px);
+}
+
+.produto-card.ativo {
+  border: 2px solid var(--green);
+}
+
+.form-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+
+  inline-size: 100%;
+  max-inline-size: 1200px;
+
+  padding: 56px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-block-end: 32px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  margin-block-end: 32px;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-block-end: 10px;
+  color: var(--text-dark);
+}
+input,
+select {
+  inline-size: 100%;
+  block-size: 52px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  font-size: 15px;
+  background: var(--white) !important;
+  color: var(--text-dark);
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input::placeholder {
+  color: #9ca3af;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 2px rgba(132, 204, 22, 0.15);
+}
+hr {
+  border: none;
+  border-block-start: 1px solid var(--border);
+  margin: 40px 0;
+}
+.btn-simular {
+  margin-block-start: 40px;
+  background: var(--green);
+  color: white;
+  block-size: 56px;
+  padding: 0 40px;
+  border: none;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  float: right;
+}
+
+.btn-simular:hover {
+  opacity: 0.9;
+}

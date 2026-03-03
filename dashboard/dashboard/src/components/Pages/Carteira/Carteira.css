@@ -1,0 +1,161 @@
+:root {
+  --bg-page: #f5f6fa;
+  --white: #ffffff;
+  --border: #e5e7eb;
+  --header-bg: #f3f4f6;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --green: #16a34a;
+  --red: #dc2626;
+}
+
+.carteira-container {
+  padding: 32px;
+  background: var(--bg-page);
+  min-block-size: 100vh;
+  font-family: "Inter", sans-serif;
+}
+
+.titulo {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-block-end: 20px;
+}
+
+
+.top-bar {
+  display: flex;
+  gap: 16px;
+  margin-block-end: 20px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  inline-size: 320px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  margin-inline-start: 8px;
+  font-size: 14px;
+  inline-size: 100%;
+  background: transparent;
+}
+
+.filtro {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 14px;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.table-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+table {
+  inline-size: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: var(--header-bg);
+}
+
+th {
+  text-align: start;
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+td {
+  padding: 16px 18px;
+  font-size: 14px;
+  color: var(--text-dark);
+  border-block-start: 1px solid var(--border);
+}
+
+tbody tr:hover {
+  background: #f9fafb;
+  cursor: pointer;
+}
+
+.badge {
+  margin-inline-start: 10px;
+  padding: 3px 9px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 600;
+  color: white;
+}
+
+.badge.a { background: #22c55e; }
+.badge.b { background: #f59e0b; }
+.badge.c { background: #f97316; }
+.badge.aa { background: #16a34a; }
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.dot {
+  inline-size: 6px;
+  block-size: 6px;
+  border-radius: 50%;
+}
+
+.status.ok {
+  color: var(--green);
+}
+
+.status.ok .dot {
+  background: var(--green);
+}
+
+.status.atraso {
+  color: var(--red);
+}
+
+.status.atraso .dot {
+  background: var(--red);
+}
+
+.paginacao {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  padding: 16px;
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.paginacao span {
+  cursor: pointer;
+}
+
+.paginacao .ativa {
+  font-weight: 600;
+  color: var(--text-dark);
+}

@@ -1,0 +1,22 @@
+table {
+  inline-size: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-block-end: 30px;
+}
+
+th, td {
+  padding: 14px;
+  text-align: start;
+}
+
+th {
+  background: var(--primary-light);
+}
+
+tr:nth-child(even) {
+  background: #f9fafb;
+}

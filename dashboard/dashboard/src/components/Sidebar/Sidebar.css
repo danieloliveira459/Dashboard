@@ -1,0 +1,28 @@
+.sidebar {
+  background: var(--white);
+  padding: 30px 20px;
+  border-inline-end: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.logo {
+  margin-block-start: 30px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--text-dark);
+}
+
+.menu.active {
+  background: var(--primary-light);
+  color: var(--primary);
+  font-weight: 600;
+}
